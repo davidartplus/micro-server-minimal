@@ -1,7 +1,7 @@
 repositories { jcenter() }
 
 buildscript {
-	repositories { maven { url "https://plugins.gradle.org/m2/" } }
+	repositories { maven { url "https://plugins.gradle.org/m2/", "https://jitpack.io" } }
 	dependencies { classpath "com.github.jengelman.gradle.plugins:shadow:1.2.3" }
 }
 apply plugin: "com.github.johnrengelman.shadow"
