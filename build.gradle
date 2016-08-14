@@ -1,10 +1,12 @@
 repositories { jcenter() }
 
 buildscript {
-	repositories { maven { url "https://plugins.gradle.org/m2/", "https://jitpack.io" } }
+	repositories { maven {  url "https://plugins.gradle.org/m2/"
+				url "https://jitpack.io" } }
 	dependencies { classpath "com.github.jengelman.gradle.plugins:shadow:1.2.3" }
 }
 apply plugin: "com.github.johnrengelman.shadow"
 apply plugin: 'java'
-dependencies { compile 'com.aol.microservices:micro-grizzly-with-jersey:0.87.1' }
+dependencies { compile 'com.aol.microservices:micro-grizzly-with-jersey:0.87.1' 
+               compile 'com.github.davidartplus:micro-server-minimal:0.1'}
 shadowJar { mergeServiceFiles()  }
