@@ -8,5 +8,5 @@ buildscript {
 apply plugin: "com.github.johnrengelman.shadow"
 apply plugin: 'java'
 dependencies { compile 'com.aol.microservices:micro-grizzly-with-jersey:0.87.1' 
-               compile 'com.github.davidartplus:micro-server-minimal:0.1.1'}
+               compile 'com.github.davidartplus:micro-server-minimal:master-SNAPSHOT'}
 shadowJar { mergeServiceFiles()  }
