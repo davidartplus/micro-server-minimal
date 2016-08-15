@@ -1,2 +1,2 @@
-web: java -cp micro-server-minimal-all.jar aol.Main
+web: java -cp build/libs/micro-server-minimal-all.jar aol.Main
 
