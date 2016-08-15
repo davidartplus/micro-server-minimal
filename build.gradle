@@ -7,5 +7,5 @@ buildscript {
 apply plugin: "com.github.johnrengelman.shadow"
 apply plugin: 'java'
 dependencies { compile 'com.aol.microservices:micro-grizzly-with-jersey:0.87.1'} 
-task stage { dependsOn clean, build}
+task stage { dependsOn clean, shadowJar}
 shadowJar { mergeServiceFiles()  }
