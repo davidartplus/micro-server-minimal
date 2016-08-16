@@ -1,5 +1,6 @@
 repositories { jcenter()
-    mavenLocal() }
+    flatDir {dirs 'libs'}
+}
 
 buildscript {
     repositories {
